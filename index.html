@@ -1,11 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="style.css" />
     <title>Profile Card</title>
   </head>
   <body>
+    <div class="container">
+      <div class="icons">
+        <i class="fa-brands fa-facebook" style="color: #004add"></i>
+        <i class="fa-brands fa-instagram" style="color: #e1306c"></i>
+        <i class="fa-brands fa-discord" style="color: #7289da"></i>
+        <i class="fa-brands fa-github" style="color: white"></i>
+        <i class="fa-brands fa-youtube" style="color: red"></i>
+      </div>
+
+      <p class="head-text">Abdullah Saleem</p>
+      <p class="at-text">@crabby.xd</p>
+      <div class="pfp"></div>
+
+      <h5 class="desc">
+        I'm working towards becoming a full-stack web developer. I love learning
+        new things and enjoy creating websites.
+      </h5>
+    </div>
+    <a href="https://linktr.ee/_crab" target="_blank">
+      <button class="f-button">Follow</button>
+    </a>
+    <a href="http://" target="_blank">
+      <button class="ctn-btn" onclick="sendEmail()">Contact Me</button>
+    </a>
+
     <script>
       function sendEmail() {
         // Define the email parameters
@@ -22,29 +53,5 @@
         window.location.href = mailtoLink;
       }
     </script>
-    <div class="container">
-      <div class="icons">
-        <i class="fa-brands fa-facebook" style="color: 	#004add"></i>
-        <i class="fa-brands fa-instagram" style="color: 		#E1306C"></i>
-        <i class="fa-brands fa-discord" style="color: 	#7289da"></i>
-        <i class="fa-brands fa-github" style="color: 	white"></i>
-        <i class="fa-brands fa-youtube" style="color: red; background-color: ;"></i>
-      </div>
-
-      <p class="head-text">Abdullah Saleem</p>
-      <p class="at-text">@crabby.xd</p>
-      <div class="pfp"></div>
-
-      <h5 class="desc">
-        I'm working towards becoming a full-stack web developer.
-         I love learning new things and enjoy creating websites.
-      </h5>
-    </div>
-    <a href="https://linktr.ee/_crab" target="_blank">
-      <button class="f-button">Follow</button>
-    </a>
-    <a href="http://" target="_blank">
-      <button class="ctn-btn" onclick="sendEmail()">Contact Me</button>
-    </a>
   </body>
 </html>
